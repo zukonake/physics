@@ -4,9 +4,10 @@
 //
 #include "Tile.hpp"
 
-Tile::Tile( float const &val, bool const &wall ) :
+Tile::Tile( float const &val, bool const &wall, PointI const &velocity ) :
 	val( val ),
-	wall( wall )
+	wall( wall ),
+	velocity( velocity )
 {
 }
 

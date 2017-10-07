@@ -101,7 +101,9 @@ void Entity::move()
 
 	if( mMap.inBounds( newMapPosition ) && !mMap[ newMapPosition ].wall )
 	{
+		mMap[ getMapPosition()].val += 0.01;
 		mPosition = newPosition;
+		mMap[ getMapPosition()].val -= 0.01;
 	}
 	else
 	{

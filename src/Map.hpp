@@ -23,6 +23,7 @@ class Map : public sf::Drawable
 	void brush( Tile const &tile, PointI const &point, int const &radius );
 	void createEntity( PointF const &point );
 	void simulate();
+	PointF force( PointI const &source, PointI const &direction );
 	Entity *getEntityOn( PointI const &point );
 	private:
 	float sumNeighbors( PointI const &point );
