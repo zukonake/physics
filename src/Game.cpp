@@ -62,18 +62,18 @@ void Game::handleInput()
 	{
 		auto mouse = sf::Mouse::getPosition( mWindow );
 		mouse /= mScale;
-		mMap.brush({ 0.1, false, { 0, 0 }}, { mouse.x, mouse.y }, 5 );
+		mMap.brush({ 0.1, false }, { mouse.x, mouse.y }, 5 );
 	}
 	else if( sf::Mouse::isButtonPressed( sf::Mouse::Right ))
 	{
 		auto mouse = sf::Mouse::getPosition( mWindow );
 		mouse /= mScale;
-		mMap.brush({ -0.1, false, { 0, 0 }}, { mouse.x, mouse.y }, 5 );
+		mMap.brush({ -0.1, false }, { mouse.x, mouse.y }, 5 );
 	}
 	else if( sf::Mouse::isButtonPressed( sf::Mouse::Middle ))
 	{
 		auto mouse = sf::Mouse::getPosition( mWindow );
 		mouse /= mScale;
-		mMap.brush({ 0, true, { 0, 0 }}, { mouse.x, mouse.y }, 1 );
+		mMap.brush({ 0, true }, { mouse.x, mouse.y }, 1 );
 	}
 }

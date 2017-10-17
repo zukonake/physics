@@ -4,11 +4,11 @@
 //
 #include "Tile.hpp"
 
-Tile::Tile( float const &val, bool const &wall, PointI const &velocity ) :
+Tile::Tile( float const &val, bool const &wall ) :
 	val( val ),
-	wall( wall ),
-	velocity( velocity )
+	wall( wall )
 {
+
 }
 
 void Tile::draw( sf::RenderTarget &target, sf::RenderStates states ) const

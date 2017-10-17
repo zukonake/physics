@@ -8,11 +8,10 @@
 struct Tile : public sf::Drawable
 {
 	Tile() = default;
-	Tile( float const &val, bool const &wall, PointI const &velocity );
+	Tile( float const &val, bool const &wall );
 
 	virtual void draw( sf::RenderTarget &target, sf::RenderStates states ) const override;
 
 	float val;
 	bool wall;
-	PointF velocity;
 };
