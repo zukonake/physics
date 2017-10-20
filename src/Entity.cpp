@@ -43,6 +43,7 @@ void Entity::simulate()
 	delta += force({ -1,  1 });
 	delta += force({ -1,  0 });
 	accelerate( delta );
+	accelerate( mSpeed * PointF( -0.01, -0.01 ));
 	move();
 }
 

@@ -104,6 +104,7 @@ void Map::simulate()
 		{
 			PointI position = PointI( iX, iY );
 			Tile &tile = newMap[ position ];
+			tile.wall = operator[]( position ).wall;
 			if( operator[]( position ).wall )
 			{
 				tile.val = 0;
